@@ -1,0 +1,13 @@
+(tests
+  (names dist_test pdf_test fin_test emp_test)
+  (libraries prbnmcn-stats qcheck ocamlgraph)
+  (flags (:standard -open Basic_structures -open Stats))
+  (modules dist_test pdf_test fin_test emp_test helpers)
+)
+
+(test
+  (name graph_test)
+  (libraries prbnmcn-stats ocamlgraph)
+  (flags (:standard -open Basic_structures))
+  (modules graph_test)
+)
